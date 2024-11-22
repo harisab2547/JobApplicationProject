@@ -1,5 +1,6 @@
 package com.example.jobapplicationproject;
 
+import com.example.jobapplicationproject.company.Company;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -22,5 +23,7 @@ public class Job {
     private String maxSalary;
     private String location;
 
+    @ManyToOne
+    private Company company;
 
 }

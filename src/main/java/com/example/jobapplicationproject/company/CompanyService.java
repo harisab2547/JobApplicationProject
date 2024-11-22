@@ -13,6 +13,9 @@ public interface CompanyService {
 
     boolean updateCompany(Company company,Long id);
 
+    boolean deleteCompany(Long id);
+
+    Company getCompanyByID(Long id);
 
 
 }
